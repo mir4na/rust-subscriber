@@ -9,3 +9,9 @@ String koneksi amqp://guest:guest@localhost:5672 mengikuti format URI AMQP dan d
 - "guest" pertama adalah nama pengguna (username) yang digunakan untuk melakukan autentikasi dengan broker AMQP. Ini merupakan kredensial yang digunakan sistem untuk mengidentifikasi siapa yang mencoba terhubung ke broker pesan. 
 - "guest" kedua adalah kata sandi (password) yang digunakan bersama dengan nama pengguna untuk autentikasi ke broker AMQP. Kata sandi ini digunakan untuk memverifikasi identitas pengguna. Bagian "localhost:5672" adalah hostname dan nomor port tempat broker AMQP (seperti RabbitMQ) berjalan dan mendengarkan koneksi. 
 - "localhost" menunjukkan bahwa broker pesan berjalan di mesin lokal yang sama dengan aplikasi, dan "5672" adalah nomor port default untuk koneksi AMQP. Perlu dicatat bahwa kredensial "guest:guest" adalah default untuk banyak broker AMQP seperti RabbitMQ, tetapi biasanya dibatasi hanya untuk koneksi lokal demi alasan keamanan.
+
+# Simulation slow subscriber
+
+![alt text](image.png)
+
+Pada grafik terlihat sekitar 50-60 pesan yang tertumpuk dalam antrian, hal ini terjadi karena subscriber memproses setiap pesan dengan delay 1 detik (1000ms), sementara publisher mampu mengirim pesan lebih cepat. Ketidakseimbangan antara kecepatan pengiriman pesan yang tinggi dari publisher dengan kecepatan pemrosesan yang lebih lambat di subscriber inilah yang menyebabkan penumpukan pesan dalam queue. Semakin lama publisher dijalankan berulang kali, semakin banyak pula pesan yang akan menumpuk karena subscriber tidak mampu mengimbangi kecepatan pengiriman.
