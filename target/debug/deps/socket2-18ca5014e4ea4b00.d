@@ -1,0 +1,11 @@
+C:\Hafizh\kuliah_csui\adpro\rust-subscriber\subscriber\target\debug\deps\libsocket2-18ca5014e4ea4b00.rmeta: C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\lib.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sockaddr.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\socket.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sockref.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sys\windows.rs
+
+C:\Hafizh\kuliah_csui\adpro\rust-subscriber\subscriber\target\debug\deps\libsocket2-18ca5014e4ea4b00.rlib: C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\lib.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sockaddr.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\socket.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sockref.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sys\windows.rs
+
+C:\Hafizh\kuliah_csui\adpro\rust-subscriber\subscriber\target\debug\deps\socket2-18ca5014e4ea4b00.d: C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\lib.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sockaddr.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\socket.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sockref.rs C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sys\windows.rs
+
+C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\lib.rs:
+C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sockaddr.rs:
+C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\socket.rs:
+C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sockref.rs:
+C:\Users\ASUS\.cargo\registry\src\index.crates.io-6f17d22bba15001f\socket2-0.5.9\src\sys\windows.rs:
