@@ -15,3 +15,10 @@ String koneksi amqp://guest:guest@localhost:5672 mengikuti format URI AMQP dan d
 ![alt text](image.png)
 
 Pada grafik terlihat sekitar 50-60 pesan yang tertumpuk dalam antrian, hal ini terjadi karena subscriber memproses setiap pesan dengan delay 1 detik (1000ms), sementara publisher mampu mengirim pesan lebih cepat. Ketidakseimbangan antara kecepatan pengiriman pesan yang tinggi dari publisher dengan kecepatan pemrosesan yang lebih lambat di subscriber inilah yang menyebabkan penumpukan pesan dalam queue. Semakin lama publisher dijalankan berulang kali, semakin banyak pula pesan yang akan menumpuk karena subscriber tidak mampu mengimbangi kecepatan pengiriman.
+
+# Reflection and Running at least three subscribers
+
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+Dengan menjalankan 3 subscribers secara bersamaan, sistem sekarang mampu memproses pesan 3 kali lebih cepat karena beban kerja didistribusikan secara merata ke semua consumer. Penurunan pesan yang signifikan terlihat pada grafik karena setiap subscriber bekerja paralel menangani pesan berbeda secara bersamaan, berbeda dengan sebelumnya yang hanya mengandalkan satu consumer. Namun, perlu diperhatikan bahwa penambahan consumer ini memiliki batas optimal - jika melebihi kapasitas sistem justru bisa menurunkan performa karena overhead manajemen thread. Solusi ini efektif untuk kasus dimana processing time per pesan konsisten (1 detik), tetapi untuk sistem real-world perlu ditambahkan mekanisme error handling dan pengaturan prefetch count yang lebih baik.
