@@ -1,0 +1,11 @@
+# A. What is amqp?
+
+AMQP (Advanced Message Queuing Protocol) adalah protokol lapisan aplikasi standar terbuka untuk middleware berorientasi pesan. Protokol ini memungkinkan aplikasi untuk berkomunikasi melalui broker pesan dengan cara mempublikasikan pesan ke exchanges, merutekan pesan ke antrean, dan mengkonsumsi pesan dari antrean. AMQP dirancang untuk memungkinkan pengiriman pesan yang andal, aman, dan interoperabel antar aplikasi yang berbeda. Implementasi populer dari AMQP termasuk RabbitMQ, Apache ActiveMQ, dan Azure Service Bus.
+
+# What does it mean? guest:guest@localhost:5672 , what is the first guest, and what is the second guest, and what is localhost:5672 is for?
+
+String koneksi amqp://guest:guest@localhost:5672 mengikuti format URI AMQP dan dapat diuraikan sebagai berikut. 
+
+- "guest" pertama adalah nama pengguna (username) yang digunakan untuk melakukan autentikasi dengan broker AMQP. Ini merupakan kredensial yang digunakan sistem untuk mengidentifikasi siapa yang mencoba terhubung ke broker pesan. 
+- "guest" kedua adalah kata sandi (password) yang digunakan bersama dengan nama pengguna untuk autentikasi ke broker AMQP. Kata sandi ini digunakan untuk memverifikasi identitas pengguna. Bagian "localhost:5672" adalah hostname dan nomor port tempat broker AMQP (seperti RabbitMQ) berjalan dan mendengarkan koneksi. 
+- "localhost" menunjukkan bahwa broker pesan berjalan di mesin lokal yang sama dengan aplikasi, dan "5672" adalah nomor port default untuk koneksi AMQP. Perlu dicatat bahwa kredensial "guest:guest" adalah default untuk banyak broker AMQP seperti RabbitMQ, tetapi biasanya dibatasi hanya untuk koneksi lokal demi alasan keamanan.
